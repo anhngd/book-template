@@ -61,9 +61,9 @@
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{background}}; % Background image
-\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering The Search for a Title\\[15pt] % Book title
-{\Large A Profound Subtitle}\\[20pt] % Subtitle
-{\huge Dr. John Smith}}}; % Author name
+\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Tiêu đề chính\\[15pt] % Book title
+{\Large Tiêu đề phụ}\\[20pt] % Subtitle
+{\huge Tên tác giả}}}; % Author name
 \end{tikzpicture}};
 \end{tikzpicture}
 \vfill
@@ -77,15 +77,15 @@
 ~\vfill
 \thispagestyle{empty}
 
-\noindent Copyright \copyright\ 2013 John Smith\\ % Copyright notice
+\noindent Copyright \copyright\ 2019 Nguyễn Anh\\ % Copyright notice
 
-\noindent \textsc{Published by Publisher}\\ % Publisher
+\noindent \textsc{Xuất bản bởi Nhà xuất bản}\\ % Publisher
 
-\noindent \textsc{book-website.com}\\ % URL
+\noindent \textsc{trang-web.com}\\ % URL
 
 \noindent Licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License (the ``License''). You may not use this file except in compliance with the License. You may obtain a copy of the License at \url{http://creativecommons.org/licenses/by-nc/3.0}. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \textsc{``as is'' basis, without warranties or conditions of any kind}, either express or implied. See the License for the specific language governing permissions and limitations under the License.\\ % License information
 
-\noindent \textit{First printing, March 2013} % Printing/edition date
+\noindent \textit{In lần đầu, tháng 10 năm 2019} % Printing/edition date
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -107,7 +107,7 @@
 %	PART
 %----------------------------------------------------------------------------------------
 
-\part{Part One}
+\part{Phần một}
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 1
@@ -115,30 +115,30 @@
 
 \chapterimage{chapter_head_2.pdf} % Chapter heading image
 
-\chapter{Text Chapter}
+\chapter{Chương 1}
 
-\section{Paragraphs of Text}\index{Paragraphs of Text}
+\section{Đoạn văn bản}\index{Đoạn văn bản}
 
 \lipsum[1-7] % Dummy text
 
 %------------------------------------------------
 
-\section{Citation}\index{Citation}
+\section{Trích dẫn}\index{Trích dẫn}
 
-This statement requires citation \cite{book_key}; this one is more specific \cite[122]{article_key}.
+Câu này yêu cầu trích dẫn \cite{book_key}; cụ thể hơn \cite[122]{article_key}.
 
 %------------------------------------------------
 
-\section{Lists}\index{Lists}
+\section{Danh sách}\index{Danh sách}
 
-Lists are useful to present information in a concise and/or ordered way\footnote{Footnote example...}.
+Danh sách thường được dùng để trình bày các thông tin một cách ngắn gọn và có thứ tự \footnote{ví dụ chú thích cuối trang...}.
 
-\subsection{Numbered List}\index{Lists!Numbered List}
+\subsection{Danh sách có đánh số}\index{Danh sách!Danh sách có đánh số}
 
 \begin{enumerate}
-\item The first item
-\item The second item
-\item The third item
+\item Mục thứ nhất
+\item Mục thứ hai
+\item Mục thứ ba
 \end{enumerate}
 
 \subsection{Bullet Points}\index{Lists!Bullet Points}
@@ -149,7 +149,7 @@ Lists are useful to present information in a concise and/or ordered way\footnote
 \item The third item
 \end{itemize}
 
-\subsection{Descriptions and Definitions}\index{Lists!Descriptions and Definitions}
+\subsection{Mô tả và Định nghĩa}\index{Danh sách!Mô tả và Định nghĩa}
 
 \begin{description}
 \item[Name] Description
@@ -161,16 +161,17 @@ Lists are useful to present information in a concise and/or ordered way\footnote
 %	CHAPTER 2
 %----------------------------------------------------------------------------------------
 
-\chapter{In-text Elements}
+\chapter{Các thành phần trong văn bản}
 
-\section{Theorems}\index{Theorems}
+\section{Định lý}\index{Định lý}
 
-This is an example of theorems.
+Đây là một ví dụ cho định lý.
 
-\subsection{Several equations}\index{Theorems!Several Equations}
-This is a theorem consisting of several equations.
+\subsection{Một số phương trình}\index{Định lý!Một số phương trình}
 
-\begin{theorem}[Name of the theorem]
+Đây là một định lý bao gồm các phương trình.
+
+\begin{theorem}[Tên của định lý]
 In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
 \begin{align}
 & \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
@@ -178,8 +179,9 @@ In $E=\mathbb{R}^n$ all norms are equivalent. It has the properties:
 \end{align}
 \end{theorem}
 
-\subsection{Single Line}\index{Theorems!Single Line}
-This is a theorem consisting of just one line.
+\subsection{Một dòng}\index{Định lý!Một dòng}
+
+Đây là định lý bao gồm chỉ một dòng.
 
 \begin{theorem}
 A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$. 
@@ -187,11 +189,11 @@ A set $\mathcal{D}(G)$ in dense in $L^2(G)$, $|\cdot|_0$.
 
 %------------------------------------------------
 
-\section{Definitions}\index{Definitions}
+\section{Định nghĩa}\index{Định nghĩa}
 
-This is an example of a definition. A definition could be mathematical or it could define a concept.
+Đây là một ví dụ cho định nghĩa. Một định nghĩa có thể là định nghĩa trong toán học hoặc nó định nghĩa một khái niệm.
 
-\begin{definition}[Definition name]
+\begin{definition}[Tên Định nghĩa]
 Given a vector space $E$, a norm on $E$ is an application, denoted $||\cdot||$, $E$ in $\mathbb{R}^+=[0,+\infty[$ such that:
 \begin{align}
 & ||\mathbf{x}||=0\ \Rightarrow\ \mathbf{x}=\mathbf{0}\\
@@ -202,7 +204,7 @@ Given a vector space $E$, a norm on $E$ is an application, denoted $||\cdot||$, 
 
 %------------------------------------------------
 
-\section{Notations}\index{Notations}
+\section{Ký hiệu}\index{Ký hiệu}
 
 \begin{notation}
 Given an open subset $G$ of $\mathbb{R}^n$, the set of functions $\varphi$ are:
@@ -215,9 +217,9 @@ a vector space is denoted by $\mathcal{D}(G)$.
 
 %------------------------------------------------
 
-\section{Remarks}\index{Remarks}
+\section{Nhắc lại}\index{Nhắc lại}
 
-This is an example of a remark.
+Đây là một ví dụ của nhắc lại.
 
 \begin{remark}
 The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
@@ -225,23 +227,23 @@ The concepts presented here are now in conventional employment in mathematics. V
 
 %------------------------------------------------
 
-\section{Corollaries}\index{Corollaries}
+\section{Hệ quả}\index{Hệ quả}
 
-This is an example of a corollary.
+Đây là một ví dụ về hệ quả.
 
-\begin{corollary}[Corollary name]
+\begin{corollary}[Tên hệ quả]
 The concepts presented here are now in conventional employment in mathematics. Vector spaces are taken over the field $\mathbb{K}=\mathbb{R}$, however, established properties are easily extended to $\mathbb{K}=\mathbb{C}$.
 \end{corollary}
 
 %------------------------------------------------
 
-\section{Propositions}\index{Propositions}
+\section{Mệnh đề}\index{Mệnh đề}
 
-This is an example of propositions.
+Đây là một ví dụ về mệnh đề.
 
-\subsection{Several equations}\index{Propositions!Several Equations}
+\subsection{Mệnh đề chứa công thức}\index{Mệnh đề!Mệnh đề chứa công thức}
 
-\begin{proposition}[Proposition name]
+\begin{proposition}[Tên mệnh đề]
 It has the properties:
 \begin{align}
 & \big| ||\mathbf{x}|| - ||\mathbf{y}|| \big|\leq || \mathbf{x}- \mathbf{y}||\\
@@ -249,7 +251,7 @@ It has the properties:
 \end{align}
 \end{proposition}
 
-\subsection{Single Line}\index{Propositions!Single Line}
+\subsection{Mệnh đề một dòng}\index{Mệnh đề!Mệnh đề một dòng}
 
 \begin{proposition} 
 Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\varphi)_0$ then $f = g$. 
@@ -257,11 +259,11 @@ Let $f,g\in L^2(G)$; if $\forall \varphi\in\mathcal{D}(G)$, $(f,\varphi)_0=(g,\v
 
 %------------------------------------------------
 
-\section{Examples}\index{Examples}
+\section{Ví dụ}\index{Ví dụ}
 
-This is an example of examples.
+Đây là một mẫu về Ví dụ.
 
-\subsection{Equation and Text}\index{Examples!Equation and Text}
+\subsection{Phương trình và văn bản}\index{Ví dụ!Phương trình và văn bản}
 
 \begin{example}
 Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the function:
@@ -272,17 +274,17 @@ f(x)=\left\{\begin{aligned} & \mathrm{e}^{|x|} & & \text{si $|x-x^0|\leq 1/2$}\\
 The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\intoo{0}{5/2-\sqrt{2}}$.
 \end{example}
 
-\subsection{Paragraph of Text}\index{Examples!Paragraph of Text}
+\subsection{Đoạn văn bản}\index{Ví dụ!Đoạn văn bản}
 
-\begin{example}[Example name]
+\begin{example}[Tên ví dụ]
 \lipsum[2]
 \end{example}
 
 %------------------------------------------------
 
-\section{Exercises}\index{Exercises}
+\section{Thực hành}\index{Thực hành}
 
-This is an example of an exercise.
+Đây là một ví dụ về Thực hành
 
 \begin{exercise}
 This is a good place to ask a question to test learning progress or further cement ideas into students' minds.
@@ -290,7 +292,7 @@ This is a good place to ask a question to test learning progress or further ceme
 
 %------------------------------------------------
 
-\section{Problems}\index{Problems}
+\section{Bài tập}\index{Bài tập}
 
 \begin{problem}
 What is the average airspeed velocity of an unladen swallow?
@@ -298,7 +300,7 @@ What is the average airspeed velocity of an unladen swallow?
 
 %------------------------------------------------
 
-\section{Vocabulary}\index{Vocabulary}
+\section{Thuật ngữ}\index{Thuật ngữ}
 
 Define a word to improve a students' vocabulary.
 
@@ -310,7 +312,7 @@ Definition of word.
 %	PART
 %----------------------------------------------------------------------------------------
 
-\part{Part Two}
+\part{Phần hai}
 
 %----------------------------------------------------------------------------------------
 %	CHAPTER 3
@@ -318,9 +320,9 @@ Definition of word.
 
 \chapterimage{chapter_head_1.pdf} % Chapter heading image
 
-\chapter{Presenting Information}
+\chapter{Trình bày thông tin}
 
-\section{Table}\index{Table}
+\section{Bảng}\index{Bảng}
 
 \begin{table}[h]
 \centering
@@ -338,7 +340,7 @@ Treatment 3 & 0.0009271 & 0.296 \\
 
 %------------------------------------------------
 
-\section{Figure}\index{Figure}
+\section{Hình vẽ}\index{Hình vẽ}
 
 \begin{figure}[h]
 \centering\includegraphics[scale=0.5]{placeholder}
@@ -351,10 +353,10 @@ Treatment 3 & 0.0009271 & 0.296 \\
 
 \chapter*{Bibliography}
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
-\section*{Books}
+\section*{Sách}
 \addcontentsline{toc}{section}{Books}
 \printbibliography[heading=bibempty,type=book]
-\section*{Articles}
+\section*{Bài báo}
 \addcontentsline{toc}{section}{Articles}
 \printbibliography[heading=bibempty,type=article]
 
